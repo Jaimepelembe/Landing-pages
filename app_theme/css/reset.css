@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+  /*colors*/
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; /*make to print only the pages that have content*/
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

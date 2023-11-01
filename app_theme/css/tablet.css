@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin-right: 40%;
+}
+
+.container-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  margin-right: 40px;
+}
+
+/*Section features*/
+.feature-column {
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.column {
+  margin-right: 20px;
+}
+
+/*icons*/
+.feature-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*section core-features*/
+#core-features {
+  flex-direction: row;
+}
+
+#container-core-feature {
+  flex-direction: row;
+}
+
+#container-features {
+  margin-top: 0px;
+}
+
+/*Footer*/
+#footer-information {
+  flex-direction: row;
+
+  align-items: normal;
+}
+
+#contactus {
+  width: 200px;
+  margin-right: 10px;
+}
+
+#about {
+  width: 200px;
+}
