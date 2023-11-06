@@ -1,4 +1,6 @@
+@import "style.css";
+
 /*Section emphasis*/
-#column-image {
-  height: 400px;
+#emphasis-column-image {
+  height: 480px;
 }

@@ -1,4 +1,9 @@
+@import "style.css";
 /*Section emphasis*/
-#column-image {
-  height: 400px;
+#emphasis {
+  flex-direction: row-reverse;
+}
+
+#emphasis-column-image {
+  /* height: 400px;*/
 }
