@@ -23,6 +23,11 @@
   /*application*/
   --font-title: "Fredoka", sans-serif;
   --font-content: "Montserrat", serif;
+
+  /*constants*/
+  --video-height: calc(0.5625 * 100vw);
+  --width-svg-client-logo: 32px;
+  --height-svg-client-logo: 32px;
 }
 
 /*Body an components settings*/
@@ -194,6 +199,7 @@ header {
 .title-header {
   color: var(--color-blue-dark);
 }
+/*End of geral settings*/
 
 /*Section emphasis*/
 #emphasis {
@@ -280,3 +286,104 @@ header {
 /*End Resources graphics*/
 
 /*End of section resources*/
+
+/*Section video*/
+#video .title-header {
+  width: 100%;
+  max-width: 620px;
+  padding: 10px;
+  text-align: start;
+}
+iframe {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 620px;
+  height: var(--video-height);
+}
+/*End of Section video*/
+
+/*Section plans*/
+#plans {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*price-plans*/
+#table-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plans-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 320px;
+  padding: 40px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--color-gray-dark-light60);
+}
+
+.price-plan {
+  font-family: var(--font-title);
+  font-size: var(--font-size-25);
+}
+
+/*The aside month*/
+.month {
+  display: inline;
+  font-family: var(--font-content);
+  font-size: var(--font-size-16);
+  font-weight: 400;
+  color: var(--color-gray-dark);
+}
+/*Plan resource*/
+.plans-resources {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resource {
+  display: flex;
+  gap: 10px;
+}
+
+/*Plan start*/
+#title-price-start {
+  color: var(--color-blue);
+}
+
+/*Plan pro*/
+#price-pro {
+  background-color: var(--color-blue);
+}
+#price-pro aside {
+  color: var(--color-white);
+}
+#price-pro .title-price {
+  color: var(--color-white);
+}
+
+#price-pro .paragraph {
+  color: var(--color-white);
+}
+#title-price-pro {
+  color: var(--color-white);
+}
+
+/*Plan expert*/
+#title-price-expert {
+  color: var(--color-blue);
+}
+/*End of Section plans*/
+
+/*Section clients*/
+.svg-client-logo {
+  width: var(--width-svg-client-logo);
+  height: var(--height-svg-client-logo);
+}
+/*End of section clients*/
