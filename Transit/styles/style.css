@@ -441,11 +441,12 @@ footer {
 #social h5 {
   margin: 0px;
 }
+/**
 .network{color:var(--color-black);}
 .network:hover {
   color: var(--color-gray-dark-light60);
   cursor:pointer;
-}
+}*/
 #container-social-network {
   flex-direction: row;
 }
