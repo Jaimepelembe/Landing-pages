@@ -7,6 +7,7 @@
   --color-blue-dark: #0b1f3b;
   --color-blue-hover: #12315f;
   --color-green: #4bc3cc;
+  --color-green-light90: #edf9fa;
   --color-gray-dark: #44494f;
   --color-gray-dark-light60: #b4b6b9;
   --gradient: linear-gradient(90deg, #2c7aed -8.37%, #4bc3cc 100%);
@@ -105,6 +106,16 @@ header {
   padding: 20px;
   background-color: var(--color-blue-dark);
   z-index: 2;
+  animation-duration: 0.5s;
+}
+
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: 0vw;
+  }
 }
 
 .button-icon-header {
@@ -115,7 +126,7 @@ header {
 
 .icon-header {
   width: 32px;
-  height: 40px;
+  height: 32px;
   color: var(--color-white);
 }
 
@@ -415,9 +426,56 @@ iframe {
 }
 /*End of section newsletter*/
 
+/*Section doubts*/
+#background-doubts {
+  background-color: var(--color-blue);
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+.faq {
+  border-bottom: 1px solid var(--color-white);
+  margin-top: 40px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.faq:active ~ .arrowDown {
+  transform: rotate(180deg);
+}
+.faq:active ~ .answer {
+  display: block;
+}
+
+.question {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.arrowDown {
+  border: none;
+  color: var(--color-white);
+}
+
+.title-faqs {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.answer {
+  display: none;
+  overflow: hidden;
+}
+
+.answer .paragraph {
+  color: var(--color-white);
+  padding-top: 10px;
+}
+
+/*End of section doubts*/
+
 /*Footer*/
 footer {
-  margin-bottom: 10px;
+  padding: 20px 0px;
+  background-color: var(--color-green-light90);
 }
 /*information*/
 #transit-information {
@@ -453,5 +511,6 @@ footer {
 /*copyright*/
 #copyrights .paragraph {
   text-align: center;
+  color: var(--color-black);
 }
 /*End of footer*/
