@@ -433,17 +433,30 @@ iframe {
   border-radius: 16px;
 }
 .faq {
+  max-width: 320px;
   border-bottom: 1px solid var(--color-white);
   margin-top: 40px;
   padding-bottom: 20px;
   cursor: pointer;
 }
 
-.faq:active ~ .arrowDown {
+.faq.active .arrowDown {
   transform: rotate(180deg);
 }
-.faq:active ~ .answer {
-  display: block;
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .question {
@@ -453,6 +466,7 @@ iframe {
 .arrowDown {
   border: none;
   color: var(--color-white);
+  transition: transform 0.27s ease-in;
 }
 
 .title-faqs {
@@ -461,8 +475,9 @@ iframe {
 }
 
 .answer {
-  display: none;
   overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.6s ease;
 }
 
 .answer .paragraph {

@@ -1,9 +1,68 @@
 @import "style.css";
+
+.paragraph {
+  font-size: var(--font-size-16);
+}
+
+#header {
+  align-items: center;
+}
+
+/*Navigation header*/
+#navigation_header {
+  width: 256px;
+  height: 500px;
+}
+
+.icon-header {
+  width: 40px;
+  height: 40px;
+}
+
+#link-home {
+  font-size: var(--font-size-49);
+}
+
+.link-nav {
+  font-size: var(--font-size-16);
+}
+
+/*End of navigation header*/
+
+/*Geral settings*/
+.section-mother {
+  padding: 0px 10px;
+}
+/*
+.column-text {
+  width: 94%;
+  max-width: 600px;
+  padding: 0px 10px;
+}
+
+.title-header {
+  color: var(--color-blue-dark);
+}
+/*flexbox*/
+/*
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+*/
+
+/*End of geral settings*/
+
 /*Section emphasis*/
 #emphasis {
   flex-direction: row-reverse;
 }
+/*End of section emphasis*/
 
-#emphasis-column-image {
-  /* height: 400px;*/
+/*Section resources*/
+#resources .flexbox {
+  flex-direction: row;
 }
+/*End of section resources*/

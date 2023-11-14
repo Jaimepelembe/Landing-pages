@@ -1,5 +1,31 @@
 @import "style.css";
 
+#header {
+  align-items: center;
+}
+
+/*Navigation header*/
+#navigation_header {
+  position: relative;
+  margin-left: 0vw;
+  background: transparent;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+.button-icon-header {
+  display: none;
+}
+.listLink {
+  flex-direction: row;
+}
+
+.button {
+  font-size: var(--font-size-16);
+}
+
+/*End of navigation header*/
+
 /*Section emphasis*/
 #emphasis-column-image {
   height: 480px;
