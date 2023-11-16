@@ -8,6 +8,13 @@
   align-items: center;
 }
 
+.title-header {
+  font-size: var(--font-size-25);
+}
+.title-features {
+  font-size: var(--font-size-16);
+}
+
 /*Navigation header*/
 #navigation_header {
   width: 256px;
@@ -20,7 +27,7 @@
 }
 
 #link-home {
-  font-size: var(--font-size-49);
+  font-size: var(--font-size-31);
 }
 
 .link-nav {
@@ -30,39 +37,106 @@
 /*End of navigation header*/
 
 /*Geral settings*/
-.section-mother {
-  padding: 0px 10px;
+.flexbox-row {
+  flex-direction: row;
 }
-/*
-.column-text {
-  width: 94%;
-  max-width: 600px;
-  padding: 0px 10px;
-}
-
-.title-header {
-  color: var(--color-blue-dark);
-}
-/*flexbox*/
-/*
-.flexbox {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-*/
-
 /*End of geral settings*/
 
 /*Section emphasis*/
 #emphasis {
   flex-direction: row-reverse;
 }
+
+#emphasis-column-text {
+  max-width: 320px;
+}
 /*End of section emphasis*/
 
 /*Section resources*/
-#resources .flexbox {
+.frame {
   flex-direction: row;
+  max-width: 520px;
+}
+
+#resources-graphics {
+  width: 100%;
+  padding: 10px 0px;
+}
+#performance {
+  text-align: center;
 }
 /*End of section resources*/
+
+/*Section video*/
+#video {
+  width: 100%;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+iframe {
+  max-width: 768px;
+}
+
+/*End of section video*/
+
+/*Section plans*/
+#table-prices {
+  flex-direction: row;
+}
+/*End of section plans*/
+
+/*Section clients*/
+.svg-client-logo {
+  width: 48px;
+  height: 48px;
+}
+
+#listClients {
+  gap: 80px;
+}
+
+/*End of section clients*/
+
+/*Section newsletter*/
+#newsletter {
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+#title-newsletter {
+  font-size: var(--font-size-25);
+}
+
+#text-newsletter {
+  font-size: var(--font-size-16);
+  width: 320px;
+}
+
+/*End of section newsletter*/
+
+/*Section doubts*/
+.title-faqs {
+  font-size: var(--font-size-20);
+}
+
+/*End of section doubts*/
+
+/*Footer*/
+
+/*Contacts*/
+#transit-information .title-header{
+  font-size: var(--font-size-31);
+}
+
+/*Social*/
+#social .title-header{
+  font-size: var(--font-size-25);
+}
+.network{
+width:40px;
+height:40px;
+
+}
+
+/*End of footer*/
