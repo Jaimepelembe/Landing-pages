@@ -1,4 +1,3 @@
-@import "style.css";
 @import "tablet.css";
 
 .paragraph {
@@ -64,7 +63,6 @@
 #emphasis-column-image {
   height: 480px;
 }
-
 /*Section resources*/
 
 #resources {
@@ -93,5 +91,4 @@
 iframe {
   max-width: 1140px;
 }
-
 /*End of section video*/

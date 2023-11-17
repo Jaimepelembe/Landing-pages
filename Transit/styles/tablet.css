@@ -54,7 +54,9 @@
 
 /*Section resources*/
 
-#features{gap:40px;}
+#features {
+  gap: 40px;
+}
 .frame {
   flex-direction: row;
   max-width: 520px;
@@ -104,13 +106,11 @@ iframe {
 #listClients {
   gap: 80px;
 }
-
 /*End of section clients*/
 
 /*Section newsletter*/
 #newsletter {
   align-items: flex-start;
-  padding: 40px 20px;
 }
 
 #title-newsletter {
@@ -121,18 +121,15 @@ iframe {
   font-size: var(--font-size-16);
   width: 320px;
 }
-
 /*End of section newsletter*/
 
 /*Section doubts*/
 .title-faqs {
   font-size: var(--font-size-20);
 }
-
 /*End of section doubts*/
 
 /*Footer*/
-
 /*Contacts*/
 #transit-information .title-header {
   font-size: var(--font-size-31);
@@ -146,5 +143,4 @@ iframe {
   width: 40px;
   height: 40px;
 }
-
 /*End of footer*/
