@@ -3,6 +3,7 @@
 
 :root {
   /*colors*/
+  --color-black-dark10: #1a1a1a;
   --color-blue: #2c7aed;
   --color-blue-dark: #0b1f3b;
   --color-blue-hover: #12315f;
@@ -241,7 +242,6 @@ header {
   color: var(--color-green);
 }
 
-
 /*End Section emphasis*/
 
 /*Section resources*/
@@ -341,9 +341,10 @@ iframe {
 #price-pro {
   background-color: var(--color-blue);
 }
-#price-pro aside {
+#price-pro aside, #price-pro .title-price, #price-pro .paragraph, #title-price-pro    {
   color: var(--color-white);
 }
+/*
 #price-pro .title-price {
   color: var(--color-white);
 }
@@ -353,7 +354,7 @@ iframe {
 }
 #title-price-pro {
   color: var(--color-white);
-}
+}*/
 
 /*Plan expert*/
 #title-price-expert {
@@ -404,8 +405,8 @@ iframe {
 
 #button-send {
   color: var(--color-white);
-  background-color: var(--color-green);
-  background-image:none;
+  background-color: var(--color-black);
+  background-image: none;
   border: none;
   border-radius: 8px;
   font-family: var(--font-content);
@@ -414,7 +415,7 @@ iframe {
 }
 
 #button-send:hover {
-  background-color: var(--color-blue-hover);
+  background-color: var(--color-black-dark10);
 }
 
 #text-newsletter {

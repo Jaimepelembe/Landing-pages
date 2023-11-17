@@ -20,6 +20,7 @@ function showSidebar() {
 }
 
 function closeSidebar() {
+  navigationHeader.style.position = "absolute";
   navigationHeader.style.marginLeft = "-100vw";
   navigationHeader.style.animationName = "";
   content.style.filter = "";

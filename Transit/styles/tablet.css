@@ -53,9 +53,12 @@
 /*End of section emphasis*/
 
 /*Section resources*/
+
+#features{gap:40px;}
 .frame {
   flex-direction: row;
   max-width: 520px;
+  gap: 80px;
 }
 
 #resources-graphics {
@@ -65,6 +68,12 @@
 #performance {
   text-align: center;
 }
+
+/*Services*/
+#services {
+  flex-direction: column;
+}
+
 /*End of section resources*/
 
 /*Section video*/
@@ -125,18 +134,17 @@ iframe {
 /*Footer*/
 
 /*Contacts*/
-#transit-information .title-header{
+#transit-information .title-header {
   font-size: var(--font-size-31);
 }
 
 /*Social*/
-#social .title-header{
+#social .title-header {
   font-size: var(--font-size-25);
 }
-.network{
-width:40px;
-height:40px;
-
+.network {
+  width: 40px;
+  height: 40px;
 }
 
 /*End of footer*/

@@ -2,15 +2,7 @@
 @import "tablet.css";
 
 .paragraph {
-  font-size: var(--font-size-20);
-}
-
-.title-header {
-  font-size: var(--font-size-25);
-}
-
-#header {
-  align-items: center;
+  font-size: var(--font-size-18);
 }
 
 /*Navigation header*/
@@ -19,6 +11,7 @@
   margin-left: 0vw;
   background: transparent;
   flex-direction: row;
+  gap: 40px;
   width: auto;
   height: auto;
 }
@@ -27,6 +20,10 @@
 }
 
 /*link nav*/
+.listLink {
+  flex-direction: row;
+  gap: 40px;
+}
 .link-nav {
   font-size: var(--font-size-20);
 }
@@ -36,9 +33,6 @@
 
 .button-icon-header {
   display: none;
-}
-.listLink {
-  flex-direction: row;
 }
 
 .button {
@@ -57,6 +51,10 @@
 /*End of navigation header*/
 
 /*Geral settings*/
+.section-mother {
+  max-width: 1140px;
+}
+
 .flexbox-row {
   flex-direction: row;
 }
@@ -66,3 +64,34 @@
 #emphasis-column-image {
   height: 480px;
 }
+
+/*Section resources*/
+
+#resources {
+  width: 100%;
+}
+/*Services*/
+#services {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#introduction {
+  max-width: 460px;
+}
+
+.frame {
+  gap: 10px;
+}
+.title-features {
+  font-size: var(--font-size-20);
+}
+
+/*End of section resources*/
+
+/*Section video*/
+iframe {
+  max-width: 1140px;
+}
+
+/*End of section video*/

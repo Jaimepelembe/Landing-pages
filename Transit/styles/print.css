@@ -1,1 +1,65 @@
-@import "style.css";
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  /*Fonts*/
+  --font-title: "Roboto Mono", courier, monospace;
+  --font-content: "Courier New", courier, monospace;
+}
+
+html,
+body {
+  overflow: auto; /*make to print only the pages that have content*/
+  font-family: var(--font-content);
+  font-size: 16px;
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
+
+/* Display:none for #header, .button, #video, #doubts, #footer */
+#header,
+.button,
+#video,
+#doubts,
+#newsletter,
+#footer {
+  display: none;
+}
+/*End of header*/
+
+.paragraph {
+  color: var(--color-black);
+}
+
+.title-header {
+  font-family: var(--font-title);
+  font-size: 25px;
+}
+#performance {
+  color: var(--color-blue-dark);
+}
+
+.title-features {
+  font-size: 20px;
+}
+
+#table-prices {
+  flex-direction: row;
+}
+
+#price-pro aside,
+#price-pro .title-price,
+#price-pro .paragraph {
+  color: var(--color-black);
+}
+#title-price-pro {
+  color: var(--color-blue);
+}
+
+#listClients {
+  flex-direction: row;
+  margin-bottom: 40px;
+}
