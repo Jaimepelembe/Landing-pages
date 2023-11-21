@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echo dot</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="svgs/favicon.svg" type="image/x-icon" />
+    <!--Styles-->
+    <link rel="stylesheet" href="styles/reset.css" media="all" />
+    <link rel="stylesheet" href="styles/style.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="styles/tablet.css"
+      media="screen and (min-width: 769px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/desktop.css"
+      media="screen and (min-width: 1025px)"
+    />
+    <link rel="stylesheet" href="styles/print.css" media="print" />
+  </head>
+
+  <body>
+    <header id="header">
+      <button class="button-icon-header" onclick="changeStatusSidebar()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-list icon-header"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+      <span id="title-amazon"><a href="#" id="link-amazon">Amazon</a></span>
+
+      <nav id="navigation_header" class="flexbox">
+        <button class="button-icon-header" onclick="changeStatusSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-x icon-header"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+
+        <ul class="listLink flexbox flexbox-row">
+          <li>
+            <a href="#" class="link-nav" onclick="closeSidebar()"
+              >Dispositivos Amazon</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-nav" onclick="closeSidebar()"
+              >Echo e Alexa</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-nav" onclick="closeSidebar()"
+              >Casa inteligente</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-nav" onclick="closeSidebar()"
+              >Conheça a Alexa</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-nav" onclick="closeSidebar()">Ajuda</a>
+          </li>
+        </ul>
+        <div id="container-button-sign" class="container-button">
+          <button id="button-sign" class="button">Cadastrar</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!--Section information-->
+      <section id="introduction" class="flexbox flexbox-row section-mother">
+        <!--Container of paragraphs-->
+        <div class="container-information flexbox">
+          <div class="container-paragraph">
+            <p id="title-introduction">
+              <span class="title-turquoise-light">Echo</span>dot
+            </p>
+            <p id="paragraph-introduction" class="paragraph">
+              Tenha a Alexa em qualquer ambiente
+            </p>
+          </div>
+          <!--Container of buttons-->
+          <div class="container-buttons flexbox flexbox-row">
+            <button id="button-offer" class="button">Conferir oferta</button>
+            <div
+              id="container-buton-play"
+              class="container-buttons flexbox-row"
+            >
+              <button id="button-play" class="button">Play</button>
+              <span id="text-button-play">Play video</span>
+            </div>
+          </div>
+        </div>
+        <!--Container of images-->
+        <div class="container-image flexbox">
+          <img src="images/Echo_dot.png" alt="Echo dot" class="image" />
+        </div>
+      </section>
+      <!--End of section information-->
+
+      <!--Section know-echo-dot-->
+      <section id="section-know-echo-dot" class="flexbox section-mother">
+        <!--Text-->
+        <div id="text-know-more" class="container-text">
+          <h5 id="title-text-know-more" class="title-header">
+            Conheça o novo Echo
+          </h5>
+
+          <p class="paragraph paragraph-know-more">
+            Design moderno e elegante e som ainda melhor. O Echo é a combinação
+            entre som de alta qualidade, hub de casa inteligente e sensor de
+            temperatura. Os speakers potentes proporcionam agudos altos, médios
+            dinâmicos e graves profundos que garantem um som de alta qualidade
+            que se adapta a qualquer ambiente.
+          </p>
+          <p class="paragraph paragraph-know-more">
+            Use sua voz para tocar música, artista ou gênero com o Amazon Music,
+            Apple Music, Spotify, Deezer e outros. responder perguntas, ler as
+            notícias, checar a previsão do tempo, criar alarmes e muito mais.
+          </p>
+        </div>
+        <!--Image-->
+        <!--Background-image-->
+        <div class="container-image">
+          <!--Absolute positioned image-->
+          <div id="alexaComand3" class="container-image">
+            <img src="images/comand_for alexa 3.png" alt="Comando 3 da Alexa" />
+          </div>
+        </div>
+
+        <!--Icons of function of alexa-->
+        <div class="container-image flexbox-row">
+          <img
+            src="images/Icones/chat-svgrepo-com (1) 1.png"
+            alt="Conversa"
+            class="image imageFuncionsAlexa"
+          />
+          <img
+            src="images/Icones/calendar-svgrepo-com 1.png"
+            alt="Calendário"
+            class="image imageFuncionsAlexa"
+          />
+          <img
+            src="images/Icones/earth-globe-planet-svgrepo-com 1.png"
+            alt="Terra"
+            class="image imageFuncionsAlexa"
+          />
+          <img
+            src="images/Icones/idea-svgrepo-com (1) 1.png"
+            alt="Ideia"
+            class="image imageFuncionsAlexa"
+          />
+          <img
+            src="images/Icones/music-svgrepo-com 1.png"
+            alt="Música"
+            class="image imageFuncionsAlexa"
+          />
+          <img
+            src="images/Icones/news-svgrepo-com 1.png"
+            alt="Notícias"
+            class="image imageFuncionsAlexa"
+          />
+        </div>
+
+        <!--Icons of player for alexa-->
+        <div class="container-image flexbox-row">
+          <img
+            src="images/players/spotify.png"
+            alt="Spotify"
+            class="image imagePlayersAlexa"
+          />
+          <img
+            src="images/players/apple-music.png"
+            alt="Apple-music"
+            class="image imagePlayersAlexa"
+          />
+          <img
+            src="images/players/deezer.png"
+            alt="Deezer"
+            class="image imagePlayersAlexa"
+          />
+          <img
+            src="images/players/tunein.png"
+            alt="Tunein"
+            class="image imagePlayersAlexa"
+          />
+          <img
+            src="images/players/amazon-music.png"
+            alt="Amazon-music"
+            class="image imagePlayersAlexa"
+          />
+        </div>
+
+        <!--Container of offer-->
+        <div id="container-offer" class="container-text">
+          <div id="offer">
+            <aside id="title-offer" class="title-header">
+              Experiemente por
+              <aside class="title-turquoise">30 dias</aside>
+            </aside>
+            <aside class="paragraph title-turquoise">
+              Se não gostar do produto, devolvemos seu dinheiro
+            </aside>
+            <!--Container of buttons-->
+            <div class="container-buttons">
+              <button id="button-offer" class="button">Conferir oferta</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of section know-echo-dot-->
+
+      <!--Section section-know-alexa-->
+      <section class="know-alexa section-mother">
+        <!--What Alexa can do-->
+
+        <div id="what-alexa-can-do" class="flexbox">
+          <h5 class="title-header">Descubra o que a Alexa pode fazer</h5>
+
+          <!--Background image for alexa on a desk-->
+          <div id="container-image-what-can-do" class="container-image"></div>
+        </div>
+        <!--Information of Alexa-->
+        <div id="container-information-of-alexa" class="flexbox">
+          <div id="column1" class="column">
+            <div id="comand1" class="comand">
+              <div class="description flexbox-row">
+                <img
+                  src="images/Icones/music-svgrepo-com 1.png"
+                  alt="Músic"
+                  class="image icon-description"
+                />
+                <aside class="title-turquoise-light">
+                  "Alexa, toca músicas da Iza."
+                </aside>
+              </div>
+              <p class="paragraph">
+                Peça músicas, artistas ou gêneos por voz pelo Amazon Music,
+                Apple Music, Spotify, Deezer e outros.
+              </p>
+            </div>
+            <div id="comand2" class="comand">
+              <div class="description flexbox-row">
+                <img
+                  src="images/Icones/chat-svgrepo-com (1) 1.png"
+                  alt="Conversa"
+                  class="image icon-description"
+                />
+                <aside class="title-turquoise-light">
+                  “Alexa, liga para o Rafa.”
+                </aside>
+              </div>
+              <p class="paragraph">
+                Faça chamadas de voz e vídeo com amigos e familiares. Fale com
+                outros dispositivos Echo de sua casa.
+              </p>
+            </div>
+          </div>
+
+          <div id="column2" class="column">
+            <div id="comand1" class="comand">
+              <div class="description flexbox-row">
+                <img
+                  src="images/Icones/earth-globe-planet-svgrepo-com 1.png"
+                  alt="Terra"
+                  class="image icon-description"
+                />
+                <aside class="title-turquoise-light">
+                  “Alexa, qual a altura do Cristo Redentor ?”
+                </aside>
+              </div>
+              <p class="paragraph">
+                Pergunte o que quiser: fatos histórios, curiosidades ou até os
+                resultados da última partida de futebol.
+              </p>
+            </div>
+            <div id="comand2" class="comand">
+              <div class="description flexbox-row">
+                <img
+                  src="images/Icones/calendar-svgrepo-com 1.png"
+                  alt="Calendário"
+                  class="image icon-description"
+                />
+                <aside class="title-turquoise-light">
+                  “Alexa, me lembre de fazer exercício.”
+                </aside>
+              </div>
+              <p class="paragraph">
+                Sincronize seu calendário, crie lembretes, timers e alarmes e
+                peça para a Alexa te lembrar o que quiser.
+              </p>
+            </div>
+          </div>
+
+          <div id="column3" class="column">
+            <div id="comand1" class="comand">
+              <div class="description flexbox-row">
+                <img
+                  src="images/Icones/idea-svgrepo-com (1) 1.png"
+                  alt="Ideia"
+                  class="image icon-description"
+                />
+                <aside class="title-turquoise-light">
+                  “Alexa, acende a luz.”
+                </aside>
+              </div>
+              <p class="paragraph">
+                Controle seus dispositivos de casa inteligente por voz: luzes,
+                câmeras, plugues, controle universais e mais.
+              </p>
+            </div>
+            <div id="comand2" class="comand">
+              <div class="description flexbox-row">
+                <img
+                  src="images/Icones/news-svgrepo-com 1.png"
+                  alt="Notícias"
+                  class="image icon-description"
+                />
+                <aside class="title-turquoise-light">
+                  “Alexa, liga para o Rafa.”
+                </aside>
+              </div>
+              <p class="paragraph">
+                Matenha-se informado sobre a previsão do tempo ou as notícias
+                com G1, UOL, CBN e outros.
+              </p>
+            </div>
+          </div>
+
+          <div id="container-button-know-more">
+            <button id="button-know-more" class="button">
+              Saiba Mais sobre a Alexa
+            </button>
+            <img
+              src="images/Polygon-play.png"
+              alt="Poligono play"
+              class="image"
+            />
+          </div>
+        </div>
+      </section>
+      <!--End of section section-know-alexa-->
+
+      <!--Section tecnical details-->
+      <section id="tecnical-details" class="section-mother">
+        <h5 class="title-header">Detalhes técnicos</h5>
+        <img
+          src="images/Imagem Detalhes.png"
+          alt="Detalhes técnicos da Alexa"
+          id="image-tecnical-details"
+          class="image"
+        />
+
+        <div class="carge-text">
+          <div class="container-title-charge flexbox-row">
+            <img
+              src="images/Icones/tomada 1.png"
+              alt="Icon de tomada"
+              class="image icon-description"
+            />
+            <aside class="title-turquoise-light">Queremos que você saiba</aside>
+          </div>
+
+          <p class="paragraph">
+            Este dispositivo Echo precisa estar conectado no wifi e a uma tomada
+            para funcionar (cabo e fontes inclusos na caixa).
+          </p>
+        </div>
+
+        <div id="container-button-offer3">
+          <button id="button-offer3" class="button">Conferir oferta</button>
+        </div>
+      </section>
+      <!--End of section tecnical details-->
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+      <!--Container of links-->
+      <div id="container-links">
+        <!--Column 1-->
+        <div id="footer-column1" class="column">
+          <div id="know-us">
+            <h6 class="title-header">Conheça-nos:</h6>
+            <ul class="listFooter">
+              <li>Informações corporativas</li>
+              <li>Carreiras</li>
+              <li>Comunicados à imprensa</li>
+              <li>Comunidade</li>
+              <li>Acessibilidade</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+          <div id="won-money">
+            <h6 class="title-header">Ganhe dinheiro conosco:</h6>
+            <ul class="listFooter">
+              <li>Publique seus livros</li>
+              <li>Seja um associado</li>
+              <li>Venda na Amazon</li>
+              <li>Anuncie seus produtos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Column 2-->
+        <div id="footer-column2" class="column">
+          <div id="payments">
+            <h6 class="title-header">Pagamento:</h6>
+            <ul class="listFooter">
+              <li>Cartões de crédito</li>
+              <li>Carreiras</li>
+              <li>Cartões de débito</li>
+              <li>Boleto</li>
+              <li>Pix</li>
+            </ul>
+          </div>
+          <div id="help">
+            <h6 class="title-header">Deixe-nos ajudar você:</h6>
+            <ul class="listFooter">
+              <li>Amazon e COVID-19</li>
+              <li>Sua conta</li>
+              <li>Frete e prazo de entrega</li>
+              <li>Devoluções e reembolsos</li>
+              <li>Gerencie seu conteúdo e dispositivos</li>
+              <li>Ajuda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End of container links-->
+
+      <!--Container of copyrights-->
+      <div id="container-copyright">
+        <h4 class="title-header">amzaon</h4>
+        <div class="container-paragraphs">
+          <p class="paragraph">Notificação de Privacidade | Condições de Uso</p>
+          <p class="paragraph">Anúncios Baseados em Interesses | Cookies</p>
+          <p class="paragraph">
+            © 2021-2023 Amazon.com, Inc. ou suas afiliadas
+          </p>
+        </div>
+      </div>
+      <!--End of container copyrights-->
+    </footer>
+
+    <!--End of footer-->
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
