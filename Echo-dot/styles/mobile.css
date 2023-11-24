@@ -1,0 +1,179 @@
+html,
+body {
+  /*typography*/
+  font-family: var(--font-content);
+}
+
+/*headers*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*typography*/
+  font-family: var(--font-title);
+}
+
+h1 {
+  font-size: 61px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 39px;
+}
+h4 {
+  font-size: 31px;
+}
+h5 {
+  font-size: 25px;
+}
+h6 {
+  font-size: 20px;
+}
+
+.title-header {
+  color: var(--color-white);
+}
+
+/*End headers*/
+
+.paragraph {
+  /*typography*/
+  color: var(--color-white);
+  text-align: left;
+}
+
+.image {
+  width: 100%;
+}
+
+/*header*/
+#header {
+  /*Display stuff*/
+  align-items: flex-start;
+  justify-content: space-between;
+
+  /*Position stuff*/
+  position: fixed;
+
+  /*Box-model*/
+  width: 100%;
+  padding: 40px 20px;
+  z-index: 1;
+}
+#link-amazon {
+  /*typography*/
+  color: var(--color-white);
+  font-family: var(--font-title);
+  font-size: 39px;
+  font-weight: 500;
+}
+
+#link-amazon:hover {
+  /*typography*/
+  color: var(--color-blue-turquoise-light);
+}
+
+.button-icon-header {
+  /*box-model*/
+  border: none;
+  background-color: transparent;
+  /*manipulation*/
+  cursor: pointer;
+}
+
+.icon-header {
+  /*box-model*/
+  width: 32px;
+  height: 32px;
+  /*typograph*/
+  color: var(--color-white);
+}
+.icon-header:hover {
+  color: var(--color-blue-turquoise-light);
+}
+
+/*Navigation header*/
+#navigation_header {
+  /*Display stuff*/
+  gap: 10px;
+  z-index: 2;
+
+  /*position stuff*/
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*box-model*/
+  width: 200px;
+  height: 500px;
+  margin-left: -100vw;
+  padding: 20px;
+  background-color: var(--color-blue-dark30);
+  /*Manipulation*/
+  animation-duration: 0.5s;
+}
+
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: 0vw;
+  }
+}
+
+/*Links*/
+.link-nav {
+  color: var(--color-white);
+}
+
+.link-nav:hover {
+  color: var(--color-blue-turquoise-light);
+}
+
+/*End of header*/
+
+/*Geral settings*/
+.button {
+  /*Box-model*/
+  width: 120px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 24px;
+
+  /*typography*/
+  font-family: var(--font-content);
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-white);
+}
+.button:hover {
+  /*Box-model*/
+  background: var(--color-blue-hover);
+  /*Manipulation*/
+  cursor: pointer;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/*End of geral settings*/
+
+#main {
+  /*Display stuff*/
+  display: none;
+  gap: 80px;
+
+  /*Box-model*/
+  width: 100%;
+}

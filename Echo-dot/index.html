@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Echo dot</title>
+    <title>Amazon</title>
 
     <!--favicon-->
-    <link rel="shortcut icon" href="svgs/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/Icones/A.png" type="image/x-icon" />
     <!--Styles-->
     <link rel="stylesheet" href="styles/reset.css" media="all" />
-    <link rel="stylesheet" href="styles/style.css" media="all" />
+    <link rel="stylesheet" href="styles/mobile.css" media="all" />
     <link
       rel="stylesheet"
       href="styles/tablet.css"
@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <header id="header">
+    <header id="header" class="flexbox">
       <button class="button-icon-header" onclick="changeStatusSidebar()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,27 +60,29 @@
 
         <ul class="listLink flexbox flexbox-row">
           <li>
-            <a href="#" class="link-nav" onclick="closeSidebar()"
+            <a href="#" class="link-nav paragraph" onclick="closeSidebar()"
               >Dispositivos Amazon</a
             >
           </li>
           <li>
-            <a href="#" class="link-nav" onclick="closeSidebar()"
+            <a href="#" class="link-nav paragraph" onclick="closeSidebar()"
               >Echo e Alexa</a
             >
           </li>
           <li>
-            <a href="#" class="link-nav" onclick="closeSidebar()"
+            <a href="#" class="link-nav paragraph" onclick="closeSidebar()"
               >Casa inteligente</a
             >
           </li>
           <li>
-            <a href="#" class="link-nav" onclick="closeSidebar()"
+            <a href="#" class="link-nav paragraph" onclick="closeSidebar()"
               >Conheça a Alexa</a
             >
           </li>
           <li>
-            <a href="#" class="link-nav" onclick="closeSidebar()">Ajuda</a>
+            <a href="#" class="link-nav paragraph" onclick="closeSidebar()"
+              >Ajuda</a
+            >
           </li>
         </ul>
         <div id="container-button-sign" class="container-button">
@@ -89,7 +91,7 @@
       </nav>
     </header>
 
-    <main id="main">
+    <main id="main" class="flexbox">
       <!--Section information-->
       <section id="introduction" class="flexbox flexbox-row section-mother">
         <!--Container of paragraphs-->
