@@ -25,22 +25,23 @@
 
   <body>
     <header id="header" class="flexbox">
-      <button class="button-icon-header" onclick="changeStatusSidebar()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          fill="currentColor"
-          class="bi bi-list icon-header"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-          />
-        </svg>
-      </button>
-      <span id="title-amazon"><a href="#" id="link-amazon">Amazon</a></span>
+        <button class="button-icon-header" onclick="changeStatusSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-list icon-header"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <span id="title-amazon"><a href="#" id="link-amazon">Amazon</a></span>
+
 
       <nav id="navigation_header" class="flexbox">
         <button class="button-icon-header" onclick="changeStatusSidebar()">
@@ -94,31 +95,58 @@
     <main id="main" class="flexbox">
       <!--Section information-->
       <section id="introduction" class="flexbox flexbox-row section-mother">
+        <div id="information" class="flexbox">
         <!--Container of paragraphs-->
-        <div class="container-information flexbox">
-          <div class="container-paragraph">
-            <p id="title-introduction">
-              <span class="title-turquoise-light">Echo</span>dot
-            </p>
-            <p id="paragraph-introduction" class="paragraph">
-              Tenha a Alexa em qualquer ambiente
-            </p>
-          </div>
+            <div id="container-paragraph" class="flexbox">
+              <p id="title-introduction" class="color-turquoise-light">
+               Echo <span>dot </span>
+              </p>
+              <p id="paragraph-introduction" class="paragraph">
+                Tenha a Alexa em qualquer ambiente
+              </p>
+            </div>
+        
           <!--Container of buttons-->
           <div class="container-buttons flexbox flexbox-row">
             <button id="button-offer" class="button">Conferir oferta</button>
             <div
-              id="container-buton-play"
-              class="container-buttons flexbox-row"
+              id="container-button-play"
+              class="container-buttons flexbox flexbox-row"
             >
-              <button id="button-play" class="button">Play</button>
-              <span id="text-button-play">Play video</span>
+              <img src="images/Icones/play.png" alt="Play" id="button-play" class="image">
+              <span id="text-button-play" class="paragraph">Play video</span>
             </div>
           </div>
         </div>
         <!--Container of images-->
         <div class="container-image flexbox">
-          <img src="images/Echo_dot.png" alt="Echo dot" class="image" />
+<!--Echo dot-->
+<img src="images/Echo Dot.png" alt="Echo dot" id="echo-dot" class="image" >
+
+          <!--Comand voice 1-->
+<picture>
+    <!--desktop-->
+  <img src="images/comands-alexa/comand_for alexa 1-desktop.png" alt="comando de voz 1 para desktop" id="comand-alexa1" class="image comand-echo-dot">
+  <!--tablet-->
+  <source media="(max-width: 1024px )" srcset="images/comands-alexa/comand_for alexa 1-tablet.png" type="image/png" alt="comando de voz 1 para tablet">
+    <!--mobile-->
+    <source  media="(max-width: 768px)"  srcset="images/comands-alexa/comand_for alexa 1-mobile.png" type="image/png" alt="comando de voz 1 para mobile">
+</picture>
+
+<!--Comand voice 2-->
+<picture>
+  <!--desktop-->
+<img src="images/comands-alexa/comand_for alexa 2-desktop.png" alt="comando de voz 2 para desktop" id="comand-alexa2" class="image comand-echo-dot">
+<!--tablet-->
+<source media="(max-width: 1024px )" srcset="images/comands-alexa/comand_for alexa 2-tablet.png" type="image/png" alt="comando de voz 2 para tablet">
+  <!--mobile-->
+  <source  media="(max-width: 768px)"  srcset="images/comands-alexa/comand_for alexa 2-mobile.png" type="image/png" alt="comando de voz 2 para mobile">
+
+</picture>
+
+
+          
+        
         </div>
       </section>
       <!--End of section information-->

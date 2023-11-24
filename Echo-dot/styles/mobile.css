@@ -16,20 +16,18 @@ h6 {
 }
 
 h1 {
-  font-size: 61px;
-}
-h2 {
   font-size: 48px;
 }
-h3 {
+h2 {
   font-size: 39px;
 }
-h4 {
+h3 {
   font-size: 31px;
 }
-h5 {
+h4 {
   font-size: 25px;
 }
+h5,
 h6 {
   font-size: 20px;
 }
@@ -53,22 +51,32 @@ h6 {
 /*header*/
 #header {
   /*Display stuff*/
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 
   /*Position stuff*/
   position: fixed;
+  top: 0;
 
   /*Box-model*/
-  width: 100%;
-  padding: 40px 20px;
-  z-index: 1;
+  width: 100vw;
+  height: 40px;
+  padding: 40px 0px;
+  z-index: 2;
+  background-color: var(--color-blue-dark30);
 }
+
 #link-amazon {
+  /*Position stuff*/
+  position: absolute;
+  top: 35px;
+  right: 15px;
+
   /*typography*/
   color: var(--color-white);
   font-family: var(--font-title);
-  font-size: 39px;
+  font-size: 31px;
   font-weight: 500;
 }
 
@@ -96,6 +104,13 @@ h6 {
   color: var(--color-blue-turquoise-light);
 }
 
+.bi-list {
+  /*Position stuff*/
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+
 /*Navigation header*/
 #navigation_header {
   /*Display stuff*/
@@ -112,7 +127,7 @@ h6 {
   height: 500px;
   margin-left: -100vw;
   padding: 20px;
-  background-color: var(--color-blue-dark30);
+  background-color: var(--color-blue-dark40);
   /*Manipulation*/
   animation-duration: 0.5s;
 }
@@ -143,7 +158,7 @@ h6 {
   width: 120px;
   height: 40px;
   padding: 8px 16px;
-  background-color: var(--color-blue);
+  background-color: var(--color-blue-light);
   border: none;
   border-radius: 24px;
 
@@ -160,20 +175,77 @@ h6 {
   cursor: pointer;
 }
 
+#button-play {
+  /*box-model*/
+  width: 32px;
+}
+
 .flexbox {
+  /*Display stuff*/
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
 }
 
+.section-mother {
+  width: 100%;
+}
+
 /*End of geral settings*/
 
+/*main*/
 #main {
   /*Display stuff*/
-  display: none;
   gap: 80px;
 
   /*Box-model*/
   width: 100%;
+  margin-top: 200px;
+}
+
+/*Section introduction*/
+#introduction {
+  gap: 80px;
+}
+#title-introduction,
+#title-introduction span {
+  /*Typography*/
+  font-size: 25px;
+}
+
+#title-introduction span {
+  /*Typography*/
+  color: var(--color-white);
+}
+.color-turquoise-light {
+  /*typography*/
+  color: var(--color-blue-turquoise-light);
+}
+/*Container buttons*/
+#container-button-play {
+  gap: 10px;
+}
+
+/*images*/
+#echo-dot {
+  width: 290px;
+  height: 300px;
+}
+
+.comand-echo-dot {
+  position: absolute;
+  width: 124px;
+  height: 32px;
+}
+#comand-alex1 {
+}
+
+/*End of section introduction*/
+
+/*End of main*/
+
+/*Footer*/
+#footer {
+  display: none;
 }
