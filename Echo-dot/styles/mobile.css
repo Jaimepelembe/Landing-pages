@@ -39,6 +39,10 @@ h6 {
 /*End headers*/
 
 .paragraph {
+  /*box-model*/
+  max-width: 600px;
+  padding: 0px 10px;
+
   /*typography*/
   color: var(--color-white);
   text-align: left;
@@ -228,9 +232,13 @@ h6 {
 }
 
 /*images*/
+.container-image {
+  position: relative;
+}
+
 #echo-dot {
-  width: 290px;
-  height: 300px;
+  max-width: 290px;
+  max-height: 300px;
 }
 
 .comand-echo-dot {
@@ -238,10 +246,67 @@ h6 {
   width: 124px;
   height: 32px;
 }
-#comand-alex1 {
+#comand-alexa1 {
+  bottom: 350px;
+  left: 170px;
+}
+#comand-alexa2 {
+  bottom: 125px;
+  left: 200px;
 }
 
 /*End of section introduction*/
+
+/*Section Know echo dot*/
+
+#know-echo-dot {
+  gap: 80px;
+}
+
+#text-know-more {
+  /*box-model*/
+  background-image: var(--radial-gradient);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/*Image*/
+/*Background-image*/
+#man-using-alexa {
+  /*position stuff*/
+  position: relative;
+
+  /*box-model*/
+  width: 100%;
+  height: 100vh;
+  max-height: 392px;
+  background-image: url(../images/close_up_hand_touching_virtual_assistant.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*voice comand*/
+#comand-alexa3 {
+  /*position stuff*/
+  top: 71px;
+  left: 66px;
+
+  /*box-model*/
+  width: 243px;
+  height: 60px;
+}
+
+/*Functions of Alexa*/
+.container-flexbox-row {
+  flex-direction: row;
+}
+.imageFunctionsAlexa {
+  /*box-model*/
+  width: 32px;
+  height: 32px;
+}
+
+/*End of section Know echo dot*/
 
 /*End of main*/
 

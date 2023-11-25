@@ -25,23 +25,22 @@
 
   <body>
     <header id="header" class="flexbox">
-        <button class="button-icon-header" onclick="changeStatusSidebar()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
-            fill="currentColor"
-            class="bi bi-list icon-header"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </button>
-        <span id="title-amazon"><a href="#" id="link-amazon">Amazon</a></span>
-
+      <button class="button-icon-header" onclick="changeStatusSidebar()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-list icon-header"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+      <span id="title-amazon"><a href="#" id="link-amazon">Amazon</a></span>
 
       <nav id="navigation_header" class="flexbox">
         <button class="button-icon-header" onclick="changeStatusSidebar()">
@@ -96,16 +95,16 @@
       <!--Section information-->
       <section id="introduction" class="flexbox flexbox-row section-mother">
         <div id="information" class="flexbox">
-        <!--Container of paragraphs-->
-            <div id="container-paragraph" class="flexbox">
-              <p id="title-introduction" class="color-turquoise-light">
-               Echo <span>dot </span>
-              </p>
-              <p id="paragraph-introduction" class="paragraph">
-                Tenha a Alexa em qualquer ambiente
-              </p>
-            </div>
-        
+          <!--Container of paragraphs-->
+          <div id="container-paragraph" class="flexbox">
+            <p id="title-introduction" class="color-turquoise-light">
+              Echo <span>dot </span>
+            </p>
+            <p id="paragraph-introduction" class="paragraph">
+              Tenha a Alexa em qualquer ambiente
+            </p>
+          </div>
+
           <!--Container of buttons-->
           <div class="container-buttons flexbox flexbox-row">
             <button id="button-offer" class="button">Conferir oferta</button>
@@ -113,48 +112,83 @@
               id="container-button-play"
               class="container-buttons flexbox flexbox-row"
             >
-              <img src="images/Icones/play.png" alt="Play" id="button-play" class="image">
+              <img
+                src="images/Icones/play.png"
+                alt="Play"
+                id="button-play"
+                class="image"
+              />
               <span id="text-button-play" class="paragraph">Play video</span>
             </div>
           </div>
         </div>
         <!--Container of images-->
         <div class="container-image flexbox">
-<!--Echo dot-->
-<img src="images/Echo Dot.png" alt="Echo dot" id="echo-dot" class="image" >
+          <!--Echo dot-->
+          <img
+            src="images/Echo Dot.png"
+            alt="Echo dot"
+            id="echo-dot"
+            class="image"
+          />
 
           <!--Comand voice 1-->
-<picture>
-    <!--desktop-->
-  <img src="images/comands-alexa/comand_for alexa 1-desktop.png" alt="comando de voz 1 para desktop" id="comand-alexa1" class="image comand-echo-dot">
-  <!--tablet-->
-  <source media="(max-width: 1024px )" srcset="images/comands-alexa/comand_for alexa 1-tablet.png" type="image/png" alt="comando de voz 1 para tablet">
-    <!--mobile-->
-    <source  media="(max-width: 768px)"  srcset="images/comands-alexa/comand_for alexa 1-mobile.png" type="image/png" alt="comando de voz 1 para mobile">
-</picture>
+          <picture>
+            <!--desktop-->
+            <img
+              src="images/comands-alexa/comand_for alexa 1-desktop.png"
+              alt="comando de voz 1 para desktop"
+              id="comand-alexa1"
+              class="image comand-echo-dot"
+            />
+            <!--tablet-->
+            <source
+              media="(max-width: 1024px )"
+              srcset="images/comands-alexa/comand_for alexa 1-tablet.png"
+              type="image/png"
+              alt="comando de voz 1 para tablet"
+            />
+            <!--mobile-->
+            <source
+              media="(max-width: 768px)"
+              srcset="images/comands-alexa/comand_for alexa 1-mobile.png"
+              type="image/png"
+              alt="comando de voz 1 para mobile"
+            />
+          </picture>
 
-<!--Comand voice 2-->
-<picture>
-  <!--desktop-->
-<img src="images/comands-alexa/comand_for alexa 2-desktop.png" alt="comando de voz 2 para desktop" id="comand-alexa2" class="image comand-echo-dot">
-<!--tablet-->
-<source media="(max-width: 1024px )" srcset="images/comands-alexa/comand_for alexa 2-tablet.png" type="image/png" alt="comando de voz 2 para tablet">
-  <!--mobile-->
-  <source  media="(max-width: 768px)"  srcset="images/comands-alexa/comand_for alexa 2-mobile.png" type="image/png" alt="comando de voz 2 para mobile">
-
-</picture>
-
-
-          
-        
+          <!--Comand voice 2-->
+          <picture>
+            <!--desktop-->
+            <img
+              src="images/comands-alexa/comand_for alexa 2-desktop.png"
+              alt="comando de voz 2 para desktop"
+              id="comand-alexa2"
+              class="image comand-echo-dot"
+            />
+            <!--tablet-->
+            <source
+              media="(max-width: 1024px )"
+              srcset="images/comands-alexa/comand_for alexa 2-tablet.png"
+              type="image/png"
+              alt="comando de voz 2 para tablet"
+            />
+            <!--mobile-->
+            <source
+              media="(max-width: 768px)"
+              srcset="images/comands-alexa/comand_for alexa 2-mobile.png"
+              type="image/png"
+              alt="comando de voz 2 para mobile"
+            />
+          </picture>
         </div>
       </section>
       <!--End of section information-->
 
       <!--Section know-echo-dot-->
-      <section id="section-know-echo-dot" class="flexbox section-mother">
+      <section id="know-echo-dot" class="flexbox section-mother">
         <!--Text-->
-        <div id="text-know-more" class="container-text">
+        <div id="text-know-more" class="container-text flexbox">
           <h5 id="title-text-know-more" class="title-header">
             Conheça o novo Echo
           </h5>
@@ -174,49 +208,52 @@
         </div>
         <!--Image-->
         <!--Background-image-->
-        <div class="container-image">
-          <!--Absolute positioned image-->
-          <div id="alexaComand3" class="container-image">
-            <img src="images/comand_for alexa 3.png" alt="Comando 3 da Alexa" />
-          </div>
+        <div id="man-using-alexa" class="container-image">
+          <img
+          src="images/comands-alexa/comand_for alexa 3.png"
+          alt="Voice comand 3"
+          id="comand-alexa3"
+          class="comand-echo-dot"
+        />
+       
         </div>
 
-        <!--Icons of function of alexa-->
-        <div class="container-image flexbox-row">
+        <!--Icons of functions of alexa-->
+        <div class="container-image container-flexbox-row flexbox">
           <img
             src="images/Icones/chat-svgrepo-com (1) 1.png"
             alt="Conversa"
-            class="image imageFuncionsAlexa"
+            class="image imageFunctionsAlexa"
           />
           <img
             src="images/Icones/calendar-svgrepo-com 1.png"
             alt="Calendário"
-            class="image imageFuncionsAlexa"
+            class="image imageFunctionsAlexa"
           />
           <img
             src="images/Icones/earth-globe-planet-svgrepo-com 1.png"
             alt="Terra"
-            class="image imageFuncionsAlexa"
+            class="image imageFunctionsAlexa"
           />
           <img
             src="images/Icones/idea-svgrepo-com (1) 1.png"
             alt="Ideia"
-            class="image imageFuncionsAlexa"
+            class="image imageFunctionsAlexa"
           />
           <img
             src="images/Icones/music-svgrepo-com 1.png"
             alt="Música"
-            class="image imageFuncionsAlexa"
+            class="image imageFunctionsAlexa"
           />
           <img
             src="images/Icones/news-svgrepo-com 1.png"
             alt="Notícias"
-            class="image imageFuncionsAlexa"
+            class="image imageFunctionsAlexa"
           />
         </div>
 
         <!--Icons of player for alexa-->
-        <div class="container-image flexbox-row">
+        <div class="container-image container-flexbox-row  flexbox-row">
           <img
             src="images/players/spotify.png"
             alt="Spotify"
