@@ -74,8 +74,8 @@ h6 {
 #link-amazon {
   /*Position stuff*/
   position: absolute;
-  top: 35px;
-  right: 15px;
+  top: 25%;
+  right: 5%;
 
   /*typography*/
   color: var(--color-white);
@@ -111,8 +111,8 @@ h6 {
 .bi-list {
   /*Position stuff*/
   position: absolute;
-  top: 35px;
-  left: 15px;
+  top: 25%;
+  left: 5%;
 }
 
 /*Navigation header*/
@@ -193,7 +193,11 @@ h6 {
 }
 
 .section-mother {
+  /*box-model*/
   width: 100%;
+
+  /*Display stuff*/
+  gap: 40px;
 }
 
 /*End of geral settings*/
@@ -247,12 +251,12 @@ h6 {
   height: 32px;
 }
 #comand-alexa1 {
-  bottom: 350px;
-  left: 170px;
+  bottom: 100%;
+  left: 50%;
 }
 #comand-alexa2 {
-  bottom: 125px;
-  left: 200px;
+  bottom: 30%;
+  left: 58%;
 }
 
 /*End of section introduction*/
@@ -272,24 +276,31 @@ h6 {
 
 /*Image*/
 /*Background-image*/
+.background-properties {
+  /*box-model*/
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+  max-height: 392px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
 #man-using-alexa {
   /*position stuff*/
   position: relative;
 
   /*box-model*/
-  width: 100%;
-  height: 100vh;
-  max-height: 392px;
   background-image: url(../images/close_up_hand_touching_virtual_assistant.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
+
 /*voice comand*/
 #comand-alexa3 {
   /*position stuff*/
-  top: 71px;
-  left: 66px;
+  top: 10%;
+  left: 20%;
 
   /*box-model*/
   width: 243px;
@@ -306,11 +317,136 @@ h6 {
   height: 32px;
 }
 
+/*Players supported by Alexa*/
+#container-players {
+  align-items: start;
+}
+.column-player {
+  align-items: start;
+  flex-direction: row;
+}
+
+.imagePlayersAlexa {
+  /*box-model*/
+  max-width: 108px;
+  max-height: 40px;
+}
+
+/*Offers*/
+#container-offer {
+  /*box-model*/
+  width: 350px;
+  height: 200px;
+  border: 2px solid;
+  border-image: var(--default-gradient);
+  border-image-slice: 1; /*Set the width of the slice of the border image*/
+}
+
+#offer {
+  padding: 40px 20px;
+}
+
+#offer aside {
+  /*Display stuff*/
+  display: inline;
+
+  /*typography*/
+  font-size: 20px;
+}
+
+#aside-day {
+  /*typografy*/
+  color: var(--color-blue-turquoise-light);
+}
 /*End of section Know echo dot*/
 
+/*Section know-alexa*/
+/*background image*/
+#container-alexa-desk {
+  /*box-model*/
+  max-height: 512px;
+  background-image: url(../images/alexa-on-deskt.png);
+}
+/*Information*/
+.comand {
+  align-items: start;
+  padding: 0px 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icon-description {
+  /*display stuff*/
+  display: inline;
+
+  /*box-model*/
+  width: 24px;
+  height: 24px;
+}
+
+.title-property {
+  /*display stuff*/
+  display: inline;
+  /*typographt*/
+  font-family: var(--font-title);
+  font-size: 20px;
+}
+
+.paragraphy-property {
+  max-width: 412px;
+}
+
+/*button-know more*/
+#container-button-know-more {
+  position: relative;
+}
+
+#button-know-more {
+  /*box-model*/
+  width: 206px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+}
+#button-know-more:hover {
+  border: 1px solid var(--color-blue-turquoise-light);
+}
+
+#polygon-play {
+  /*position stuff*/
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+  right: 8%;
+
+  /*box-model*/
+  width: 8px;
+  height: 8px;
+}
+
+/*End of section know-alexa*/
+
+/*Section tecnical details*/
+#image-tecnical-details {
+  max-width: 1072px;
+}
+
+/*End of section tecnical deta*/
+/**######################**/
 /*End of main*/
 
 /*Footer*/
 #footer {
-  display: none;
+}
+
+.listFooter {
+  gap: 10px;
+  align-items: start;
+}
+.column-footer {
+  align-items: start;
 }

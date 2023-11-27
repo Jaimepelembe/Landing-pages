@@ -17,13 +17,13 @@
   --color-blue-hover: #003972;
 
   /*Gradients*/
+  --default-gradient: linear-gradient(to left,#00b5e3, #0bfcfa);
   --radial-gradient: radial-gradient(
     283.62% 38.67% at 5.57% 22.26%,
     #0e2944 0%,
     #112235 42.71%,
     #141822 100%
   );
-
 
   /*Typography*/
   /*Fonts*/
