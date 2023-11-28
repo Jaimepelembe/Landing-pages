@@ -17,7 +17,7 @@
   --color-blue-hover: #003972;
 
   /*Gradients*/
-  --default-gradient: linear-gradient(to left,#00b5e3, #0bfcfa);
+  --default-gradient: linear-gradient(to left, #00b5e3, #0bfcfa);
   --radial-gradient: radial-gradient(
     283.62% 38.67% at 5.57% 22.26%,
     #0e2944 0%,
@@ -41,6 +41,11 @@
 
 html,
 body {
+  /*Display stuff*/
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
   /*box-model stuff*/
   background-color: var(--color-blue-dark);
 }

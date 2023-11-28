@@ -441,12 +441,50 @@ h6 {
 
 /*Footer*/
 #footer {
+  /*display stuff*/
+  gap: 40px;
+
+  /*box-model*/
+  padding-bottom: 20px;
 }
 
-.listFooter {
+.listFooter,
+.description-link,
+.description-copyright {
+  /*display stuff*/
+  align-items: start;
   gap: 10px;
-  align-items: start;
 }
-.column-footer {
+.listFooter li {
+  /*typograph*/
+  color: var(--color-white);
+}
+
+.column-footer,
+#container-links {
+  /*display stuff*/
   align-items: start;
+  gap: 40px;
+}
+
+.container-paragraphs {
+  /*display stuff*/
+  align-items: start;
+  gap: 5px;
+}
+
+.container-paragraphs .paragraph {
+  padding: 0px;
+}
+
+#line1 {
+  /*position stuff*/
+
+  /*box-model*/
+  max-width: 1440px;
+}
+
+/*break point for the container of links*/
+@media screen and (min-width: 560px) {
+  #container-links{flex-direction:row;}
 }
