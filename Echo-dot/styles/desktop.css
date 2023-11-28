@@ -1,0 +1,106 @@
+@import "tablet.css";
+
+* {
+  /*typography*/
+  font-size: 18px;
+}
+
+/*Header*/
+#navigation_header {
+  /*display stuff*/
+  flex-direction: row;
+
+  /*position stuff*/
+  position: relative;
+
+  /*box-model*/
+  width: auto;
+  height: auto;
+  margin-left: 0vw;
+  background: transparent;
+}
+
+.button-icon-header {
+  display: none;
+}
+
+#link-amazon {
+  /*position stuff*/
+  position: relative;
+  left: 15%;
+}
+
+.listLink {
+  /*display stuff*/
+  gap: 10px;
+}
+
+.listLink li {
+  /*typography*/
+  font-size: 16px;
+}
+/*End of header*/
+
+/*geral settings*/
+.title-header {
+  /*typography*/
+  font-size: 31px;
+}
+.flexbox-row {
+  flex-direction: row;
+}
+.section-mother {
+  /*box-model*/
+  max-width: 1140px;
+}
+/*End of geral settings*/
+
+/*Section introduction*/
+#introduction {
+  justify-content: space-around;
+}
+
+#text-button-play {
+  /*typography*/
+  font-size: 16px;
+}
+/*End of section introduction*/
+
+/*Section know echo-dot*/
+#text-know-more {
+  padding: 80px 40px;
+}
+
+#man-using-alexa {
+  /*box-model*/
+  max-width: 1140px;
+  max-height: 644px;
+}
+
+#container-players,
+.column-player {
+  gap: 80px;
+}
+/*End of section know echo-dot*/
+
+/*Footer*/
+#container-links {
+  flex-direction: row;
+  gap: 20px;
+}
+.description-link {
+  width: auto;
+}
+
+.title-footer {
+  font-size: 25px;
+}
+
+#container-copyright {
+  align-items: center;
+}
+.container-paragraphs {
+  flex-direction: row;
+  gap: 40px;
+}
+/*End of footer*/

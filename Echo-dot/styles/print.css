@@ -1,0 +1,59 @@
+@import "mobile.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  /*Fonts*/
+  --font-title: "Roboto Mono", courier, monospace;
+  --font-content: "Courier New", courier, monospace;
+}
+
+html,
+body {
+  /*display stuff*/
+  gap: 20px;
+
+  /*box-model*/
+  width: auto;
+  height: auto;
+
+  /*typografy*/
+  font-family: var(--font-content);
+  font-size: 16px;
+
+  /*ungrouped*/
+  overflow: auto; /*make to print only the pages that have content*/
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
+
+/* Display:none for #header, .button, #footer */
+/*#header,
+.button,
+#footer,
+#echo-dot,
+#know-echo-dot,
+#text-know-more,
+#container-offer,
+#image-tecnical-details,
+#what-alexa-can-do .title-header,
+.comand-echo-dot,
+#container-functions,
+#container-players,
+#man-using-alexa,
+#container-alexa-desk {
+  display: none;
+}*/
+
+.paragraph,
+.title-header,
+.color-turquoise-light {
+  /*typograph*/
+  color: var(--color-black);
+}
+
+.title-header {
+  font-family: var(--font-title);
+}
