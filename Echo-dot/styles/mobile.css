@@ -169,6 +169,7 @@ h6 {
   /*typography*/
   font-family: var(--font-content);
   font-weight: 700;
+  font-size: 12px;
   text-align: center;
   color: var(--color-white);
 }
@@ -435,8 +436,8 @@ h6 {
   max-width: 1072px;
 }
 
-/*End of section tecnical deta*/
-/**######################**/
+/*End of section tecnical details*/
+/********************************/
 /*End of main*/
 
 /*Footer*/
@@ -484,7 +485,11 @@ h6 {
   max-width: 1440px;
 }
 
+/*End of footer*/
+
 /*break point for the container of links*/
 @media screen and (min-width: 560px) {
-  #container-links{flex-direction:row;}
+  #container-links {
+    flex-direction: row;
+  }
 }

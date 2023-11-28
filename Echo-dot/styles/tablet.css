@@ -1,0 +1,36 @@
+@import "mobile.css";
+
+* {
+  /*typography*/
+  font-size: 16px;
+}
+
+/*Header*/
+#navigation_header {
+  /*box-model*/
+  width: 320px;
+}
+/*End of header*/
+
+/*Section tecnical detailas*/
+.container-title-charge .paragraph {
+  max-width: 420px;
+}
+
+/*End of section tecnical detailas*/
+
+/*Footer*/
+
+#container-links {
+  /*display stuff*/
+  flex-direction: column;
+}
+
+.description-link {
+  width: 270px;
+}
+.column-footer {
+  /*display stuff*/
+  flex-direction: row;
+  gap: 80px;
+}
